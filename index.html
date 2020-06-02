@@ -1,0 +1,82 @@
+<!--##################################################################
+#######################################################################
+######                                                          #######
+######       Auteur : Jordan Philippot.                         #######                                                                                                                                                    #####
+######       Projet : Puissance4.                               #######
+######       Rendu  : 08 / 03 / 2020.                           #######
+######                                                          #######
+#######################################################################
+####################################################################-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Puissance 4</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>     
+        <div class="row justify-content-center color-player">
+
+          <div class="hidden-color">
+            <div class="col-yellow"></div>
+            <div class="col-red"></div>
+            <div class="m-4">
+              <h5> Welcome to Connect 4 </h5>
+              <p> Choose your color (Player N°1) & your nickname.</p>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-sm-10 col-lg-6">
+                <input class="namePlayerRed" type="text" placeholder="Nickname Player Red" name="namePlayerRed" maxlength="15"/>
+                <input class="namePlayerYellow" type="text" placeholder="Nickname Joueur Yellow" name="namePlayerYellow" maxlength="15"/>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row justify-content-center">
+            <div>
+              <span class="btn btn-success replay button_replay">Replay</span>
+              <span class="btn btn-danger exit button_exit">Exit</span>
+              <span id="nbtours" class="alert alert-primary"></span>
+            </div>
+
+            <div>
+              <span id="joueur" class="alert alert-primary"></span>
+            </div>
+            <div>
+              <div id="victoire1" class="alert alert-primary">Player points N°1 : <p id="point1">0</p> </div>
+              <div id="victoire2" class="alert alert-primary">Player points N°2 :<p id="point2">0</p></div>
+
+              <a id="popup" href="#transitionExample" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline bg-blue" data-rel="popup">Play again?</a>
+              <div data-role="popup" id="transitionExample" class="ui-content" data-theme="a">
+                <span class="btn btn-success replay replay_pop button_replay">Replay</span>
+                <span class="btn btn-danger button_exit">Exit</span>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+          <div id="structure">
+          </div>
+        </div>
+      </div>
+     
+    </body>
+</html>
