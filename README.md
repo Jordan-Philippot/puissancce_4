@@ -1,5 +1,5 @@
 # puissancce_4
-### Hello and welcome to my power 4 :)!
+### Hello and welcome to connect 4 :)!
 ###### To play, nothing's easier:
 > Choose your username according to the color (yellow or red),
 > and click on the color of player N ° 1.
