@@ -1,4 +1,5 @@
-# puissancce_4
+# Puissance_4
+#### https://connect4.jordanphilippot.me/  
 ### Hello and welcome to connect 4 :)!
 ###### To play, nothing's easier:
 > Choose your username according to the color (yellow or red),
